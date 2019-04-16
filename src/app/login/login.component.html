@@ -1,0 +1,90 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div *ngIf="show" class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>{{resMsg}}</strong>
+    <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button> -->
+  </div>
+
+<form class="form-horizontal" (ngSubmit)="onSubmit()">
+    
+<fieldset>
+  
+<!-- Form Name -->
+
+<body background="assets\images\backgrnd.jpg">
+  <br><br>
+  <h3 align="center">Register Here</h3><br><br>
+<!-- Text input-->
+<div class="form-group" align="center">
+  <label class="col-md-4 control-label" for="fname">Name</label>  
+  <div class="col-md-4">
+  <input id="userName" name="userName" type="text"  [(ngModel)]="data.place" #place="ngModel" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input
+<div class="form-group">
+  <label class="col-md-4 control-label" for="lname">Last Name</label>  
+  <div class="col-md-4">
+  <input id="lname" name="lname" type="text" placeholder="Doe" class="form-control input-md" required="">
+    
+  </div>
+</div>-->
+<!--mobile Number -->
+<div class="form-group" align="center">
+    <label class="col-md-4 control-label" for="mobileNumber">Mobile Number</label>  
+    <div class="col-md-4">
+    <input id="mobileNumber" name="mobileNumber" type="text" [(ngModel)]="data.mobileNumber" #place="ngModel" placeholder="" class="form-control input-md" required="">
+    
+    </div>
+  </div>
+<!-- Pin Code-->
+  <div class="form-group" align="center">
+      <label class="col-md-4 control-label" for="pincode">Pin Code</label>  
+      <div class="col-md-4">
+      <input id="pincode" [(ngModel)]="data.pincode" #place="ngModel" name="pincode"  type="text" placeholder="" class="form-control input-md" required="">
+      
+      </div>
+    </div>
+<!-- Text input-->
+<div class="form-group" align="center">
+  <label class="col-md-4 control-label" for="emailId">Email</label>  
+  <div class="col-md-4">
+  <input id="emailId" [(ngModel)]="data.emailId" #place="ngModel" name="emailId" type="text" placeholder="johndoe@example.com" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Password input
+<div class="form-group">
+  <label class="col-md-4 control-label" for="password">Password</label>
+  <div class="col-md-4">
+    <input id="password" name="password" type="password" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>-->
+
+<!-- Button (Double) -->
+<div class="form-group" align="center">
+  <label class="col-md-4 control-label" for="save"></label>
+  <div class="col-md-8">
+    <button id="save" (ngSubmit)="onSubmit()" name="save" class="btn btn-success">Register</button>
+    <button id="clear" name="clear" class="btn btn-danger">Reset</button>
+  </div>
+</div><br><br><br><br>
+<br></body>
+</fieldset>
+</form>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+  

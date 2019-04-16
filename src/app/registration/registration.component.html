@@ -1,0 +1,38 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<body background="assets\images\backgrnd.jpg"><br>
+    <div *ngIf="show" class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Authentication failed!</strong> Please try again.
+        <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+      </div>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="assets\images\2.png" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form (ngSubmit)="onSubmit()">
+      <input type="text" id="login" class="fadeIn second" [(ngModel)]="data.login" #place="ngModel"name="login" placeholder="Mobile Number">
+      <input type="text" id="password" [(ngModel)]="data.password" #place="ngModel" class="fadeIn third" name="login" placeholder="Password">
+      <input type="submit" (ngSubmit)="onSubmit()"   class="fadeIn fourth" value="Log In">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" routerLink="/login">Not a User? Register Here</a>
+    </div>
+
+    
+
+  </div>
+</div>
+</body>

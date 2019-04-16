@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+  <style>
+   button {
+  border: none;
+  outline: 0;
+  padding: 50px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 26px;
+}
+</style>
+</head>
+<body background="assets\images\backgrnd.jpg">
+<br>
+<div class="container"><br>
+  <h1 align="center">Welcome to Farmer's Portal</h1>
+  <br><br><br><br><br><br><br>
+  <table align="center">
+      <div *ngIf="show" >
+          <p>Authentication failed!</p> Please try again.
+          <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+        </div>
+    <td>
+  <button type="button" class="btn btn-primary btn-lg" routerLink="/hire-service">Hire an Equipment</button>
+  </td>
+  <td style = "padding-left: 20px;">
+  <button type="button" class="btn btn-primary btn-lg">Rent an Equipment</button>
+</td>
+</table>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

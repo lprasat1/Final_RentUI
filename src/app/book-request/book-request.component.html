@@ -1,0 +1,63 @@
+
+<body background="assets\images\backgrnd.jpg">
+  
+<div class="container">
+  <h2 align="center">Book your Drone Here</h2><br>
+
+  <div *ngIf="show" >
+      <h3 style="color:darkgreen"align="center"><b>Booked successfully!!!</b></h3>
+      <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button> -->
+    </div>
+  <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+    <div class=" form-group">
+      <div class="left-form">
+          <label for="place">Deliver Location</label>
+          <input id="place" name="place" class="form-control"
+          required minlength="4" appForbiddenName="bob"
+          [(ngModel)]="data.place" #place="ngModel"/>
+      </div>
+      
+<div class="left-form">
+    <label for="idate">Date</label>
+    <input id="idate" name="date" class="form-control"
+    type="date" 
+    [(ngModel)]="data.date" #date="ngModel" />
+</div>
+      
+<div class="left-form">
+    <label for="itime">Time : </label>
+    <input id="itime" type="time" name="time" 
+   class="form-control"
+   [(ngModel)]="data.time" #time="ngModel" />
+</div>
+      
+
+      <!-- <input type="submit"> -->
+
+    </div>
+    <div class="form-group">
+      <div *ngIf="name.invalid && (name.dirty || name.touched)"
+          class="alert alert-danger">
+        <div *ngIf="name.errors.required">
+          Name is required.
+        </div>
+        <div *ngIf="name.errors.minlength">
+          Name must be at least 4 characters long.
+        </div>
+        <div *ngIf="name.errors.forbiddenName">
+          Name cannot be Bob.
+        </div>
+      </div>
+    </div>
+    <div align="center" class="form-group">
+      <button class="btn btn-primary" [disabled]="f.form.pristine || f.form.invalid">Book</button>
+    </div>
+  </form>
+</div><br><br><br><br><br><br><br><br><br>
+</body>
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>

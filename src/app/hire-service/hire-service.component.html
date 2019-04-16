@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+
+<h1 style="text-align:center">Farmer's Rental Portal</h1>
+ <table align="center">
+  <td >
+<div class="card">
+  <img src="assets\images\plouging.png"  style="width:300px;height:200px">
+  <h2>Ploughing Equipments</h2>
+  
+  <p><button >Select Category</button></p>
+</div>
+</td>
+  <td >
+<div class="card">
+  <img src="assets\images\seed-selection1.png"  style="width:300px;height:200px">
+  <h2>Planting Equipments</h2>
+  
+  <p><button >Select Category</button></p>
+</div>
+</td>
+<td>
+<div class="card">
+  <img src="assets\images\fertilizers.png"  style="width:300px;height:200px">
+  <h2>Fertilizers and Sprayers</h2>
+  <p><button routerLink="/subcategory">Select Category</button></p>
+</div>
+</td>
+<tr>
+  <td>
+      <div class="card">
+          <img src="assets\images\springlers.png"  style="width:300px;height:200px">
+          <h2>Watering Equipments</h2>
+          <p><button >Select Category</button></p>
+        </div>
+  </td>
+  <td>
+      <div class="card">
+          <img src="assets\images\Rice-Harvest.png"  style="width:300px;height:200px">
+          <h2>Harvest Equipments</h2>
+          <p><button >Select Category</button></p>
+        </div>
+  </td>
+  <td>
+      <div class="card">
+          <img src="assets\images\packing3.png" style="width:300px;height:200px">
+          <h2>Packing Equipments</h2>
+          <p><button >Select Category</button></p>
+        </div>
+  </td>
+</tr>
+</table>
+</body>
+</html>
