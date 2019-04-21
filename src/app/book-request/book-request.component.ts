@@ -32,7 +32,7 @@ export class BookRequestComponent implements OnInit {
       
       this.show = true;
       console.log(request);
-      this.router.navigate(['/book-request']);
+      this.router.navigate(['/bookhistory']);
 
       //this.configService.createRequest(request).subscribe((res)=>{
       // console.log("Created a customer", res);

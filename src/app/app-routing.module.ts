@@ -7,6 +7,7 @@ import { SelectedDetailsComponent } from './selected-details/selected-details.co
 import { LoginComponent } from './login/login.component';
 import { BookRequestComponent } from './book-request/book-request.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { BookhistoryComponent } from './bookhistory/bookhistory.component';
 const routes: Routes = [
   
    
@@ -16,6 +17,7 @@ const routes: Routes = [
     { path: 'select-service',component: SelectServiceComponent},
     { path: 'book-request',component: BookRequestComponent},
     { path: 'login',component:LoginComponent},
+    { path: 'bookhistory',component:BookhistoryComponent},
      { path: '',component:RegistrationComponent}
    
 ];

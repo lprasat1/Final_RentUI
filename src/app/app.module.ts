@@ -13,10 +13,10 @@ import { SubcategoryComponent } from './subcategory/subcategory.component';
 import { SelectedDetailsComponent } from './selected-details/selected-details.component';
 import { BookRequestComponent } from './book-request/book-request.component';
 import { RegistrationComponent } from './registration/registration.component';
-
 import { HireServiceComponent } from './hire-service/hire-service.component';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from  '@angular/common/http';
+import { BookhistoryComponent } from './bookhistory/bookhistory.component';
 
 
 @NgModule({
@@ -28,7 +28,8 @@ import { HttpClientModule } from  '@angular/common/http';
     BookRequestComponent,
     RegistrationComponent,
     HireServiceComponent,
-    LoginComponent
+    LoginComponent,
+    BookhistoryComponent
   ],
   imports: [
     BrowserModule,

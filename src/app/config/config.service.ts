@@ -18,8 +18,8 @@ export class ConfigService {
     return this.httpClient.post(`${this.apiURL}/registerUser`,req);
 }
 
-public getRequest(request: bookrequest){
-  return this.httpClient.get(`${this.apiURL}/hello`);
+public getRequest(){
+  return this.httpClient.get(`http://localhost:8989/mentorportal/skillTechService/skillstech/hello`);
 }
 public validateLogin(request: Request){
   
