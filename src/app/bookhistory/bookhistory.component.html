@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+  <style>
+   button {
+  border: none;
+  outline: 0;
+  padding: 50px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 26px;
+}
+</style>
+</head>
+<form class="form-horizontal" (ngSubmit)="onSubmit()">
+<body background="assets\images\backgrnd.jpg">
+<br>
+<div class="container"><br>
+  <h1 align="center">Welcome to Farmer's Portal</h1>
+  <br><br><br><br><br><br><br>
+  
+      <div *ngIf="show" >
+          <!DOCTYPE html>
+          <html>
+          <head>
+          <style>
+          table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+          td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
+          
+          tr:nth-child(even) {
+            background-color: #dddddd;
+          }
+          </style>
+          </head>
+          <body>
+          
+          <table>
+            <tr>
+              <th>Equipment</th>
+              <th>Date</th>
+              <th>Owner Name</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+                <td>Drone for Spray</td>
+                <td>30/04/2019</td>
+                <td>Drone Raja</td>
+                <td>Rs.350/hour</td>
+              </tr>   
+          </table>
+          
+          </body>
+          </html>
+          
+      </div>
+      <table align="center">
+    <td align="center">
+  <button type="button" (click)="onSubmit()" class="btn btn-primary btn-lg" routerLink="/bookhistory">Check Booking History</button>
+  </td>
+
+</table>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</form>
+</html>
